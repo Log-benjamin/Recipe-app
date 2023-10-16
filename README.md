@@ -152,58 +152,55 @@ To get a local copy of this project up and running, follow these steps.
 <div align="center"><hr width="250px"/></div>
 
 ## 👥 Authors <a name="author"></a>
-<table>
-  <tr>
-    <td>
-      👤 <b>Binyam Tegene</b>
-      <ul>
-        <li>
-          <a href="https://github.com/Log-benjamin">
-          <img align="center" width="18px" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg" alt="github logo" />
-          <b>@luigirazum</b>
-          </a>
-        </li>
-        <li>
-        <!-- TODO: Change X-Logo source file -->
-          <a href="https://twitter.com/@binyam_tegene">
-          <img align="center" width="18px" src="" alt="x logo" />
-          <b>@LuigiRazum</b>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/binyam-tegene-4b77ab265">
-          <img align="center" width="18px" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="linkedin logo" />
-          <b>/binyam-tegene-4b77ab265</b>
-          </a>
-        </li>
-      </ul>
-    </td>
-    <td>
-      👨‍💻 <b>Luis Zubia</b>
-      <ul>
-        <li>
-          <a href="https://github.com/luigirazum">
-          <img align="center" width="18px" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg" alt="github logo" />
-          <b>@luigirazum</b>
-          </a>
-        </li>
-        <li>
-        <!-- TODO: Change X-Logo source file -->
-          <a href="https://twitter.com/LuigiRazum">
-          <img align="center" width="18px" src="" alt="x logo" />
-          <b>@LuigiRazum</b>
-          </a>
-        </li>
-        <li>
-          <a href="https://linkedin.com/in/luiszubia">
-          <img align="center" width="18px" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="linkedin logo" />
-          <b>/luiszubia</b>
-          </a>
-        </li>
-      </ul>
-    </td>
-  </tr>
-</table>
+  <div align="left" width="200px">
+    👤 <b>Binyam Tegene</b>
+    <ul>
+      <li>
+        <a href="https://github.com/Log-benjamin">
+        <img align="center" width="18px" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg" alt="github logo" />
+        <b>@luigirazum</b>
+        </a>
+      </li>
+      <li>
+      <!-- TODO: Change X-Logo source file -->
+        <a href="https://twitter.com/@binyam_tegene">
+        <img align="center" width="18px" src="https://drive.google.com/file/d/1rcApglsgc66XnPXRBW8rc1g_ngaVo9TL/view" alt="x logo" />
+        <b>@LuigiRazum</b>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/binyam-tegene-4b77ab265">
+        <img align="center" width="18px" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="linkedin logo" />
+        <b>/binyam-tegene-4b77ab265</b>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div align="right" width="200px">
+    👨‍💻 <b>Luis Zubia</b>
+    <ul>
+      <li>
+        <a href="https://github.com/luigirazum">
+        <img align="center" width="18px" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg" alt="github logo" />
+        <b>@luigirazum</b>
+        </a>
+      </li>
+      <li>
+      <!-- TODO: Change X-Logo source file -->
+        <a href="https://twitter.com/LuigiRazum">
+        <img align="center" width="18px" src="" alt="x logo" />
+        <b>@LuigiRazum</b>
+        </a>
+      </li>
+      <li>
+        <a href="https://linkedin.com/in/luiszubia">
+        <img align="center" width="18px" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="linkedin logo" />
+        <b>/luiszubia</b>
+        </a>
+      </li>
+    </ul>
+  </div>
 <br />
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
