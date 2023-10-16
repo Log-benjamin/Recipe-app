@@ -65,14 +65,14 @@
       </td>
       <td align="center">
         <p>All Public Recipes Page</p>
-        <img src="https://ik.imagekit.io/dqd3uh1at/deli_recipes_public_recipes_page.png?updatedAt=1697474899025" alt="List of all public recipes" width="350px" />
+        <img src="https://ik.imagekit.io/dqd3uh1at/deli_recipes_public_recipes_page.png?updatedAt=1697474899025" alt="List of all public recipes" width="300px" />
       </td>
     </tr>
   </table>
 
   <div align="center">
     <p>Recipe Details Page</p>
-    <img src="https://ik.imagekit.io/dqd3uh1at/deli_recipes_recipe_details_page.png?updatedAt=1697474898591" alt="Details of a recipe including food in it" width="330px" />
+    <img src="https://ik.imagekit.io/dqd3uh1at/deli_recipes_recipe_details_page.png?updatedAt=1697474898591" alt="Details of a recipe including food in it" width="310px" />
 </div>
 
 
@@ -82,19 +82,19 @@
 - ### Tech Stack <a name="tech-stack"></a>
 
   <ul>
-     <li>
+     <li align="center">
       <a href="https://www.ruby-lang.org/en/">
       <img width="19" height="auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/198px-Ruby_logo.svg.png?20101129171534" alt="ruby logo" />
       Ruby
       </a>
     </li>
-    <li>
+    <li align="center">
       <a href="https://rubyonrails.org/">
       <img width="19" height="auto" src="https://ik.imagekit.io/dqd3uh1at/rails-red-logo.svg?updatedAt=1697475084871" alt="ruby logo" />
       Rails
       </a>
     </li>
-    <li>
+    <li align="center">
       <a href="https://www.postgresql.org/">
       <img width="19" height="auto" src="https://wiki.postgresql.org/images/3/30/PostgreSQL_logo.3colors.120x120.png" alt="postgreSQL logo" />
       PostgreSQL
