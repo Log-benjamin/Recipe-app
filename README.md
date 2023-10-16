@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <img src="https://makeplaceholder.com?size=100&bg=f4bcae&text=app+logo&tcolor=ffffff&as=png" alt="logo" width="150" height="auto" />
+  <img src="https://makeplaceholder.com?size=100&bg=3b3b3b&text=app+logo&tcolor=232323&as=png" alt="logo" width="150" height="auto" />
   <br/>
 
  Keep track of all your recipes, ingredients, and inventory in one place with **Deli Recipes**. Find a wide variety of _delicious_ and _popular recipes_, from classic comfort food to international cuisine. Our app makes it easy to *plan* your *meals*, *shop* for *groceries*, and *cook* your *favorite dishes*. Try **Deli Recipes** today and start cooking like a pro.
@@ -42,18 +42,39 @@
   To _preserve_ the data we are going to create a [PostgreSQL](https://www.postgresql.org/) **Database**, the end result should follow the **ERD Diagram** showed below.
 
   <p align="center">
-    <img src="https://makeplaceholder.com?size=100&bg=f4bcae&text=erd+diagram&tcolor=ffffff&as=png" alt="Entity Relationship Diagram" width="300px" />
+    <img src="https://ik.imagekit.io/dqd3uh1at/deli_recipes_erd_diagram.png?updatedAt=1697474900004" alt="Entity Relationship Diagram" width="500px" />
   </p>
 
   For this project we will have full freedom in terms of visual design but we'll need to keep the following wireframes:
 
-  <p align="center">
-    <img src="https://makeplaceholder.com?size=100x150&bg=f4bcae&text=food+list&tcolor=ffffff&as=png" alt="List of all foods for a user" width="250px" />
-    <img src="https://makeplaceholder.com?size=100x150&bg=f4bcae&text=recipes+list&tcolor=ffffff&as=png" alt="List of all recipes for a user" width="250px" />
-    <img src="https://makeplaceholder.com?size=100x150&bg=f4bcae&text=recipe+details&tcolor=ffffff&as=png" alt="Details of a recipe including food in it" width="250px" />
-    <img src="https://makeplaceholder.com?size=100x150&bg=f4bcae&text=public+recipes&tcolor=ffffff&as=png" alt="List of all public recipes" width="250px" />
-    <img src="https://makeplaceholder.com?size=100x150&bg=f4bcae&text=shopping+list&tcolor=ffffff&as=png" alt="Shopping list for all recipes of user" width="250px" />
-  </p>
+  <table>
+    <tr>
+      <td align="center">
+        <p>Foods Page</p>
+        <img src="https://ik.imagekit.io/dqd3uh1at/deli_recipes_foods_page.png?updatedAt=1697474899471" alt="List of all foods for a user" width="375px" />
+      </td>
+      <td align="center">
+        <p>Foods Page</p>
+        <img src="https://ik.imagekit.io/dqd3uh1at/deli_recipes_shopping_list_page.png?updatedAt=1697474899145" alt="Shopping list for all recipes of user" width="515px" />
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <p>All Recipes Page</p>
+        <img src="https://ik.imagekit.io/dqd3uh1at/deli_recipes_recipes_page.png?updatedAt=1697474898233" alt="List of all recipes for a user" width="400px" />
+      </td>
+      <td align="center">
+        <p>All Public Recipes Page</p>
+        <img src="https://ik.imagekit.io/dqd3uh1at/deli_recipes_public_recipes_page.png?updatedAt=1697474899025" alt="List of all public recipes" width="400px" />
+      </td>
+    </tr>
+  </table>
+
+  <div align="center">
+    <p>Recipe Details Page</p>
+    <img src="https://ik.imagekit.io/dqd3uh1at/deli_recipes_recipe_details_page.png?updatedAt=1697474898591" alt="Details of a recipe including food in it" width="400px" />
+</div>
+
 
 <div align="center"><hr width="250px"/></div>
 
@@ -69,7 +90,7 @@
     </li>
     <li>
       <a href="https://rubyonrails.org/">
-      <img align="center" width="19" height="auto" src="app/assets/images/logos/rails-red-logo.svg" alt="ruby logo" />
+      <img align="center" width="19" height="auto" src="https://ik.imagekit.io/dqd3uh1at/rails-red-logo.svg?updatedAt=1697475084871" alt="ruby logo" />
       Rails
       </a>
     </li>
@@ -160,7 +181,7 @@ To get a local copy of this project up and running, follow these steps.
     <li>
     <!-- TODO: Change X-Logo source file -->
       <a href="https://twitter.com/@binyam_tegene">
-      <img align="center" width="18px" src="https://drive.google.com/file/d/1rcApglsgc66XnPXRBW8rc1g_ngaVo9TL/view" alt="x logo" />
+      <img align="center" width="18px" src="https://ik.imagekit.io/dqd3uh1at/x-new-logo.svg?updatedAt=1697475085598" alt="x logo" />
       <b>@LuigiRazum</b>
       </a>
     </li>
@@ -184,7 +205,7 @@ To get a local copy of this project up and running, follow these steps.
     <li>
     <!-- TODO: Change X-Logo source file -->
       <a href="https://twitter.com/LuigiRazum">
-      <img align="center" width="18px" src="" alt="x logo" />
+      <img align="center" width="18px" src="https://ik.imagekit.io/dqd3uh1at/x-new-logo.svg?updatedAt=1697475085598" alt="x logo" />
       <b>@LuigiRazum</b>
       </a>
     </li>
