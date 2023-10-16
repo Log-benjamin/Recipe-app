@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <img src="https://makeplaceholder.com?size=100&bg=3b3b3b&text=app+logo&tcolor=232323&as=png" alt="logo" width="150" height="auto" />
+  <img src="app\assets\images\logo.PNG" alt="logo" width="150" height="auto" />
   <br/>
 
  Keep track of all your recipes, ingredients, and inventory in one place with **Deli Recipes**. Find a wide variety of _delicious_ and _popular recipes_, from classic comfort food to international cuisine. Our app makes it easy to *plan* your *meals*, *shop* for *groceries*, and *cook* your *favorite dishes*. Try **Deli Recipes** today and start cooking like a pro.
@@ -117,16 +117,6 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <div align="right"><hr width="250px"/><br /></div>
 
-<!-- LIVE DEMO
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](<replace-with-your-deployment-URL>)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
--->
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -175,26 +165,25 @@ To get a local copy of this project up and running, follow these steps.
     <li>
       <a href="https://github.com/Log-benjamin">
       <img align="center" width="18px" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg" alt="github logo" />
-      <b>@luigirazum</b>
+      <b>@binyam tegene</b>
       </a>
     </li>
     <li>
-    <!-- TODO: Change X-Logo source file -->
       <a href="https://twitter.com/@binyam_tegene">
       <img align="center" width="18px" src="https://ik.imagekit.io/dqd3uh1at/x-new-logo.svg?updatedAt=1697475085598" alt="x logo" />
-      <b>@LuigiRazum</b>
+      <b>@binyam tegene</b>
       </a>
     </li>
     <li>
       <a href="https://www.linkedin.com/in/binyam-tegene-4b77ab265">
       <img align="center" width="18px" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="linkedin logo" />
-      <b>/binyam-tegene-4b77ab265</b>
+      <b>@binyam tegene</b>
       </a>
     </li>
   </ul>
   <br />
-
-  👨‍💻 <b>Luis Zubia</b>
+  
+👨‍💻 <b>Luis Zubia</b>
   <ul>
     <li>
       <a href="https://github.com/luigirazum">
@@ -216,6 +205,8 @@ To get a local copy of this project up and running, follow these steps.
       </a>
     </li>
   </ul>
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <div align="right"><hr width="250px"/><br /></div>
