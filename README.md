@@ -146,9 +146,7 @@ To get a local copy of this project up and running, follow these steps.
   http://localhost:3000
   ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- AUTHORS -->
-<div align="center"><hr width="250px"/></div>
+<hr align="right" width="250px"/>
 
 ## 👥 Authors <a name="author"></a>
   👤 <b>Binyam Tegene</b>
@@ -173,6 +171,7 @@ To get a local copy of this project up and running, follow these steps.
       </a>
     </li>
   </ul>
+  <br />
 
   👨‍💻 <b>Luis Zubia</b>
   <ul>
@@ -234,6 +233,7 @@ _**Wikipedia:** [Ruby on Rails - History](https://en.wikipedia.org/wiki/Ruby_on_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <hr align="right" width="250px"/>
+
 <!-- FAQ (optional)
 
 ## ❓ FAQ <a name="faq"></a>
