@@ -6,10 +6,9 @@
   <br/>
 
  Keep track of all your recipes, ingredients, and inventory in one place with **Deli Recipes**. Find a wide variety of _delicious_ and _popular recipes_, from classic comfort food to international cuisine. Our app makes it easy to *plan* your *meals*, *shop* for *groceries*, and *cook* your *favorite dishes*. Try **Deli Recipes** today and start cooking like a pro.
-
 </div>
 
-<div align="center"><hr width="250px"/></div>
+<hr width="250px"/><br />
 
 # 📗 Table of Contents
 
@@ -31,7 +30,7 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-<div align="center"><hr width="250px"/></div>
+<hr align="center" width="250px"/><br />
 
 # 🍽️ **Deli Recipes** App <a name="about-project"></a>
 
@@ -95,6 +94,7 @@
   - It will show a **List of all Public Recipes** from registered users with their names and total prices.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+<hr align="right" width="250px"/>
 
 <!-- LIVE DEMO
 
@@ -107,7 +107,6 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 -->
 <!-- GETTING STARTED -->
-<div align="center"><hr width="250px"/></div>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -152,64 +151,54 @@ To get a local copy of this project up and running, follow these steps.
 <div align="center"><hr width="250px"/></div>
 
 ## 👥 Authors <a name="author"></a>
-<table>
-  <tr>
-    <td>
-      👤 <b>Binyam Tegene</b>
-      <ul>
-        <li>
-          <a href="https://github.com/Log-benjamin">
-          <img align="center" width="18px" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg" alt="github logo" />
-          <b>@luigirazum</b>
-          </a>
-        </li>
-        <li>
-        <!-- TODO: Change X-Logo source file -->
-          <a href="https://twitter.com/@binyam_tegene">
-          <img align="center" width="18px" src="" alt="x logo" />
-          <b>@LuigiRazum</b>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/binyam-tegene-4b77ab265">
-          <img align="center" width="18px" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="linkedin logo" />
-          <b>/binyam-tegene-4b77ab265</b>
-          </a>
-        </li>
-      </ul>
-    </td>
-    <td>
-      👨‍💻 <b>Luis Zubia</b>
-      <ul>
-        <li>
-          <a href="https://github.com/luigirazum">
-          <img align="center" width="18px" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg" alt="github logo" />
-          <b>@luigirazum</b>
-          </a>
-        </li>
-        <li>
-        <!-- TODO: Change X-Logo source file -->
-          <a href="https://twitter.com/LuigiRazum">
-          <img align="center" width="18px" src="" alt="x logo" />
-          <b>@LuigiRazum</b>
-          </a>
-        </li>
-        <li>
-          <a href="https://linkedin.com/in/luiszubia">
-          <img align="center" width="18px" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="linkedin logo" />
-          <b>/luiszubia</b>
-          </a>
-        </li>
-      </ul>
-    </td>
-  </tr>
-</table>
-<br />
+  👤 <b>Binyam Tegene</b>
+  <ul>
+    <li>
+      <a href="https://github.com/Log-benjamin">
+      <img align="center" width="18px" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg" alt="github logo" />
+      <b>@luigirazum</b>
+      </a>
+    </li>
+    <li>
+    <!-- TODO: Change X-Logo source file -->
+      <a href="https://twitter.com/@binyam_tegene">
+      <img align="center" width="18px" src="https://drive.google.com/file/d/1rcApglsgc66XnPXRBW8rc1g_ngaVo9TL/view" alt="x logo" />
+      <b>@LuigiRazum</b>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/binyam-tegene-4b77ab265">
+      <img align="center" width="18px" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="linkedin logo" />
+      <b>/binyam-tegene-4b77ab265</b>
+      </a>
+    </li>
+  </ul>
+
+  👨‍💻 <b>Luis Zubia</b>
+  <ul>
+    <li>
+      <a href="https://github.com/luigirazum">
+      <img align="center" width="18px" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg" alt="github logo" />
+      <b>@luigirazum</b>
+      </a>
+    </li>
+    <li>
+    <!-- TODO: Change X-Logo source file -->
+      <a href="https://twitter.com/LuigiRazum">
+      <img align="center" width="18px" src="" alt="x logo" />
+      <b>@LuigiRazum</b>
+      </a>
+    </li>
+    <li>
+      <a href="https://linkedin.com/in/luiszubia">
+      <img align="center" width="18px" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="linkedin logo" />
+      <b>/luiszubia</b>
+      </a>
+    </li>
+  </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FUTURE FEATURES -->
-<div align="center"><hr width="250px"/></div>
+<hr align="right" width="250px"/>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
@@ -219,9 +208,7 @@ To get a local copy of this project up and running, follow these steps.
 - **Search** for recipes by *ingredient*, *cuisine*, or *occasion*.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
-<div align="center"><hr width="250px"/></div>
+<hr align="right" width="250px"/>
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -230,18 +217,14 @@ Contributions, issues, typos, and feature requests are welcome!
 Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- SUPPORT -->
-<div align="center"><hr width="250px"/></div>
+<hr align="right" width="250px"/>
 
 ## ⭐️ Show your support <a name="support"></a>
 
 If you like this project, your support giving a ⭐ will be highly appreciated.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<div align="center"><hr width="250px"/></div>
-<!-- ACKNOWLEDGEMENTS -->
+<hr align="right" width="250px"/>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
@@ -250,7 +233,7 @@ If you like this project, your support giving a ⭐ will be highly appreciated.
 _**Wikipedia:** [Ruby on Rails - History](https://en.wikipedia.org/wiki/Ruby_on_Rails)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+<hr align="right" width="250px"/>
 <!-- FAQ (optional)
 
 ## ❓ FAQ <a name="faq"></a>
@@ -268,10 +251,10 @@ _**Wikipedia:** [Ruby on Rails - History](https://en.wikipedia.org/wiki/Ruby_on_
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 -->
 <!-- LICENSE -->
-<div align="center"><hr width="250px"/></div>
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+<hr align="right" width="250px"/>
