@@ -82,21 +82,21 @@
 - ### Tech Stack <a name="tech-stack"></a>
 
   <ul>
-     <li vertical-align="center">
+     <li>
       <a href="https://www.ruby-lang.org/en/">
-      <img width="19" height="auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/198px-Ruby_logo.svg.png?20101129171534" alt="ruby logo" />
+      <img width="16" height="auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/198px-Ruby_logo.svg.png?20101129171534" alt="ruby logo" />
       Ruby
       </a>
     </li>
-    <li vertical-align="center">
+    <li>
       <a href="https://rubyonrails.org/">
-      <img width="19" height="auto" src="https://ik.imagekit.io/dqd3uh1at/rails-red-logo.svg?updatedAt=1697475084871" alt="ruby logo" />
+      <img width="16" height="auto" src="https://ik.imagekit.io/dqd3uh1at/rails-red-logo.svg?updatedAt=1697475084871" alt="ruby logo" />
       Rails
       </a>
     </li>
-    <li vertical-align="center">
+    <li>
       <a href="https://www.postgresql.org/">
-      <img width="19" height="auto" src="https://wiki.postgresql.org/images/3/30/PostgreSQL_logo.3colors.120x120.png" alt="postgreSQL logo" />
+      <img width="16" height="auto" src="https://wiki.postgresql.org/images/3/30/PostgreSQL_logo.3colors.120x120.png" alt="postgreSQL logo" />
       PostgreSQL
       </a>
     </li>
@@ -163,20 +163,20 @@ To get a local copy of this project up and running, follow these steps.
   👤 <b>Binyam Tegene</b>
   <ul>
     <li>
-      <a align="center" href="https://github.com/Log-benjamin">
-      <img align="center" width="18px" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg" alt="github logo" />
+      <a href="https://github.com/Log-benjamin">
+      <img width="16px" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg" alt="github logo" />
       <b>@binyam tegene</b>
       </a>
     </li>
     <li>
-      <a align="center" href="https://twitter.com/@binyam_tegene">
-      <img align="center" width="18px" src="https://ik.imagekit.io/dqd3uh1at/x-new-logo.svg?updatedAt=1697475085598" alt="x logo" />
+      <a href="https://twitter.com/@binyam_tegene">
+      <img width="16px" src="https://ik.imagekit.io/dqd3uh1at/x-new-logo.svg?updatedAt=1697475085598" alt="x logo" />
       <b>@binyam tegene</b>
       </a>
     </li>
     <li>
-      <a align="center" href="https://www.linkedin.com/in/binyam-tegene-4b77ab265">
-      <img align="center" width="18px" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="linkedin logo" />
+      <a href="https://www.linkedin.com/in/binyam-tegene-4b77ab265">
+      <img width="16px" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="linkedin logo" />
       <b>@binyam tegene</b>
       </a>
     </li>
@@ -186,20 +186,20 @@ To get a local copy of this project up and running, follow these steps.
 👨‍💻 <b>Luis Zubia</b>
   <ul>
     <li>
-      <a align="center" href="https://github.com/luigirazum">
-      <img align="center" width="18px" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg" alt="github logo" />
+      <a href="https://github.com/luigirazum">
+      <img width="16px" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg" alt="github logo" />
       <b>@luigirazum</b>
       </a>
     </li>
     <li>
-      <a align="center" href="https://twitter.com/LuigiRazum">
-      <img align="center" width="18px" src="https://ik.imagekit.io/dqd3uh1at/x-new-logo.svg?updatedAt=1697475085598" alt="x logo" />
+      <a href="https://twitter.com/LuigiRazum">
+      <img width="16px" src="https://ik.imagekit.io/dqd3uh1at/x-new-logo.svg?updatedAt=1697475085598" alt="x logo" />
       <b>@LuigiRazum</b>
       </a>
     </li>
     <li>
-      <a align="center" href="https://linkedin.com/in/luiszubia">
-      <img align="center" width="18px" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="linkedin logo" />
+      <a href="https://linkedin.com/in/luiszubia">
+      <img width="16px" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="linkedin logo" />
       <b>/luiszubia</b>
       </a>
     </li>
