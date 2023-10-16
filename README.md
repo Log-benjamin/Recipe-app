@@ -8,7 +8,7 @@
  Keep track of all your recipes, ingredients, and inventory in one place with **Deli Recipes**. Find a wide variety of _delicious_ and _popular recipes_, from classic comfort food to international cuisine. Our app makes it easy to *plan* your *meals*, *shop* for *groceries*, and *cook* your *favorite dishes*. Try **Deli Recipes** today and start cooking like a pro.
 </div>
 
-<hr width="250px"/><br />
+<div align="center"><hr width="250px"/><br /></div>
 
 # 📗 Table of Contents
 
@@ -30,7 +30,7 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-<hr align="center" width="250px"/><br />
+<div align="center"><hr width="250px"/><br /></div>
 
 # 🍽️ **Deli Recipes** App <a name="about-project"></a>
 
@@ -82,7 +82,7 @@
   </ul>
 
 <div align="center"><hr width="250px"/></div>
-<!-- Features -->
+
 - ### Key Features <a name="key-features"></a>
 
   **Deli Recipes** it's a fully functional website where you'll be able to find a wide variety of delicious and popular recipes, from classic comfort food to international cuisine. Try _Deli Recipes_ today and start cooking like a pro!
@@ -94,7 +94,7 @@
   - It will show a **List of all Public Recipes** from registered users with their names and total prices.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<hr align="right" width="250px"/>
+<div align="right"><hr width="250px"/><br /></div>
 
 <!-- LIVE DEMO
 
@@ -146,9 +146,7 @@ To get a local copy of this project up and running, follow these steps.
   http://localhost:3000
   ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- AUTHORS -->
-<div align="center"><hr width="250px"/></div>
+<div align="right"><hr width="250px"/><br /></div>
 
 ## 👥 Authors <a name="author"></a>
   👤 <b>Binyam Tegene</b>
@@ -173,6 +171,7 @@ To get a local copy of this project up and running, follow these steps.
       </a>
     </li>
   </ul>
+  <br />
 
   👨‍💻 <b>Luis Zubia</b>
   <ul>
@@ -198,7 +197,7 @@ To get a local copy of this project up and running, follow these steps.
   </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<hr align="right" width="250px"/>
+<div align="right"><hr width="250px"/><br /></div>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
@@ -208,7 +207,7 @@ To get a local copy of this project up and running, follow these steps.
 - **Search** for recipes by *ingredient*, *cuisine*, or *occasion*.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<hr align="right" width="250px"/>
+<div align="right"><hr width="250px"/><br /></div>
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -217,14 +216,14 @@ Contributions, issues, typos, and feature requests are welcome!
 Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<hr align="right" width="250px"/>
+<div align="right"><hr width="250px"/><br /></div>
 
 ## ⭐️ Show your support <a name="support"></a>
 
 If you like this project, your support giving a ⭐ will be highly appreciated.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<hr align="right" width="250px"/>
+<div align="right"><hr width="250px"/><br /></div>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
@@ -233,7 +232,8 @@ If you like this project, your support giving a ⭐ will be highly appreciated.
 _**Wikipedia:** [Ruby on Rails - History](https://en.wikipedia.org/wiki/Ruby_on_Rails)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<hr align="right" width="250px"/>
+<div align="right"><hr width="250px"/><br /></div>
+
 <!-- FAQ (optional)
 
 ## ❓ FAQ <a name="faq"></a>
@@ -257,4 +257,9 @@ _**Wikipedia:** [Ruby on Rails - History](https://en.wikipedia.org/wiki/Ruby_on_
 This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<hr align="right" width="250px"/>
+
+<div align="right">
+
+<hr width="250px"/>
+
+<br /></div>
