@@ -51,7 +51,7 @@
     <tr>
       <td align="center">
         <p>Foods Page</p>
-        <img src="https://ik.imagekit.io/dqd3uh1at/deli_recipes_foods_page.png?updatedAt=1697474899471" alt="List of all foods for a user" width="375px" />
+        <img src="https://ik.imagekit.io/dqd3uh1at/deli_recipes_foods_page.png?updatedAt=1697474899471" alt="List of all foods for a user" width="385px" />
       </td>
       <td align="center">
         <p>General Shopping List Page</p>
@@ -61,18 +61,18 @@
     <tr>
       <td align="center">
         <p>All Recipes Page</p>
-        <img src="https://ik.imagekit.io/dqd3uh1at/deli_recipes_recipes_page.png?updatedAt=1697474898233" alt="List of all recipes for a user" width="350px" />
+        <img src="https://ik.imagekit.io/dqd3uh1at/deli_recipes_recipes_page.png?updatedAt=1697474898233" alt="List of all recipes for a user" width="385" />
       </td>
       <td align="center">
         <p>All Public Recipes Page</p>
-        <img src="https://ik.imagekit.io/dqd3uh1at/deli_recipes_public_recipes_page.png?updatedAt=1697474899025" alt="List of all public recipes" width="400px" />
+        <img src="https://ik.imagekit.io/dqd3uh1at/deli_recipes_public_recipes_page.png?updatedAt=1697474899025" alt="List of all public recipes" width="350px" />
       </td>
     </tr>
   </table>
 
   <div align="center">
     <p>Recipe Details Page</p>
-    <img src="https://ik.imagekit.io/dqd3uh1at/deli_recipes_recipe_details_page.png?updatedAt=1697474898591" alt="Details of a recipe including food in it" width="350px" />
+    <img src="https://ik.imagekit.io/dqd3uh1at/deli_recipes_recipe_details_page.png?updatedAt=1697474898591" alt="Details of a recipe including food in it" width="330px" />
 </div>
 
 
@@ -83,20 +83,20 @@
 
   <ul>
      <li>
-      <a align="center" href="https://www.ruby-lang.org/en/">
-      <img align="center" width="19" height="auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/198px-Ruby_logo.svg.png?20101129171534" alt="ruby logo" />
+      <a href="https://www.ruby-lang.org/en/">
+      <img width="19" height="auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/198px-Ruby_logo.svg.png?20101129171534" alt="ruby logo" />
       Ruby
       </a>
     </li>
     <li>
-      <a align="center" href="https://rubyonrails.org/">
-      <img align="center" width="19" height="auto" src="https://ik.imagekit.io/dqd3uh1at/rails-red-logo.svg?updatedAt=1697475084871" alt="ruby logo" />
+      <a href="https://rubyonrails.org/">
+      <img width="19" height="auto" src="https://ik.imagekit.io/dqd3uh1at/rails-red-logo.svg?updatedAt=1697475084871" alt="ruby logo" />
       Rails
       </a>
     </li>
     <li>
-      <a align="center" href="https://www.postgresql.org/">
-      <img align="center" width="19" height="auto" src="https://wiki.postgresql.org/images/3/30/PostgreSQL_logo.3colors.120x120.png" alt="postgreSQL logo" />
+      <a href="https://www.postgresql.org/">
+      <img width="19" height="auto" src="https://wiki.postgresql.org/images/3/30/PostgreSQL_logo.3colors.120x120.png" alt="postgreSQL logo" />
       PostgreSQL
       </a>
     </li>
