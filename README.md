@@ -56,7 +56,7 @@
       <tr>
         <td align="center">
           <p><b>Login</b> Page</p>
-          <img src="https://ik.imagekit.io/dqd3uh1at/deli_recipes_login_page.png?updatedAt=1697568732086" alt="List of all foods for a user" width="385px" />
+          <img src="https://ik.imagekit.io/dqd3uh1at/deli_recipes_login_page.png?updatedAt=1697568732086" alt="List of all foods for a user" width="350px" />
         </td>
         <td align="center">
           <p><b>Foods</b> Page</p>
