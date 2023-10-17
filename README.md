@@ -8,7 +8,7 @@
  Keep track of all your recipes, ingredients, and inventory in one place with **Deli Recipes**. Find a wide variety of _delicious_ and _popular recipes_, from classic comfort food to international cuisine. Our app makes it easy to *plan* your *meals*, *shop* for *groceries*, and *cook* your *favorite dishes*. Try **Deli Recipes** today and start cooking like a pro.
 </div>
 
-<div align="center"><hr width="250px"/><br /></div>
+<div align="center"><hr width="250px"/></div>
 
 # 📗 Table of Contents
 
@@ -30,7 +30,7 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-<div align="center"><hr width="250px"/><br /></div>
+<div align="center"><hr width="250px"/></div>
 
 # 🍽️ **Deli Recipes** App <a name="about-project"></a>
 
@@ -51,28 +51,28 @@
     <tr>
       <td align="center">
         <p>Foods Page</p>
-        <img src="https://ik.imagekit.io/dqd3uh1at/deli_recipes_foods_page.png?updatedAt=1697474899471" alt="List of all foods for a user" width="375px" />
+        <img src="https://ik.imagekit.io/dqd3uh1at/deli_recipes_foods_page.png?updatedAt=1697474899471" alt="List of all foods for a user" width="385px" />
       </td>
       <td align="center">
-        <p>Foods Page</p>
-        <img src="https://ik.imagekit.io/dqd3uh1at/deli_recipes_shopping_list_page.png?updatedAt=1697474899145" alt="Shopping list for all recipes of user" width="515px" />
+        <p>General Shopping List Page</p>
+        <img src="https://ik.imagekit.io/dqd3uh1at/deli_recipes_shopping_list_page.png?updatedAt=1697474899145" alt="Shopping list for all recipes of user" width="550px" />
       </td>
     </tr>
     <tr>
       <td align="center">
         <p>All Recipes Page</p>
-        <img src="https://ik.imagekit.io/dqd3uh1at/deli_recipes_recipes_page.png?updatedAt=1697474898233" alt="List of all recipes for a user" width="400px" />
+        <img src="https://ik.imagekit.io/dqd3uh1at/deli_recipes_recipes_page.png?updatedAt=1697474898233" alt="List of all recipes for a user" width="385" />
       </td>
       <td align="center">
         <p>All Public Recipes Page</p>
-        <img src="https://ik.imagekit.io/dqd3uh1at/deli_recipes_public_recipes_page.png?updatedAt=1697474899025" alt="List of all public recipes" width="400px" />
+        <img src="https://ik.imagekit.io/dqd3uh1at/deli_recipes_public_recipes_page.png?updatedAt=1697474899025" alt="List of all public recipes" width="280px" />
       </td>
     </tr>
   </table>
 
   <div align="center">
     <p>Recipe Details Page</p>
-    <img src="https://ik.imagekit.io/dqd3uh1at/deli_recipes_recipe_details_page.png?updatedAt=1697474898591" alt="Details of a recipe including food in it" width="400px" />
+    <img src="https://ik.imagekit.io/dqd3uh1at/deli_recipes_recipe_details_page.png?updatedAt=1697474898591" alt="Details of a recipe including food in it" width="310px" />
 </div>
 
 
@@ -84,19 +84,19 @@
   <ul>
      <li>
       <a href="https://www.ruby-lang.org/en/">
-      <img align="center" width="19" height="auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/198px-Ruby_logo.svg.png?20101129171534" alt="ruby logo" />
+      <img width="16px" height="auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/198px-Ruby_logo.svg.png?20101129171534" alt="ruby logo" />
       Ruby
       </a>
     </li>
     <li>
       <a href="https://rubyonrails.org/">
-      <img align="center" width="19" height="auto" src="https://ik.imagekit.io/dqd3uh1at/rails-red-logo.svg?updatedAt=1697475084871" alt="ruby logo" />
+      <img width="16px" height="auto" src="https://ik.imagekit.io/dqd3uh1at/rails-red-logo.svg?updatedAt=1697475084871" alt="ruby logo" />
       Rails
       </a>
     </li>
     <li>
       <a href="https://www.postgresql.org/">
-      <img align="center" width="19" height="auto" src="https://wiki.postgresql.org/images/3/30/PostgreSQL_logo.3colors.120x120.png" alt="postgreSQL logo" />
+      <img width="16px" height="auto" src="https://wiki.postgresql.org/images/3/30/PostgreSQL_logo.3colors.120x120.png" alt="postgreSQL logo" />
       PostgreSQL
       </a>
     </li>
@@ -115,7 +115,7 @@
   - It will show a **List of all Public Recipes** from registered users with their names and total prices.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<div align="right"><hr width="250px"/><br /></div>
+<div align="right"><hr width="250px"/></div>
 
 <!-- GETTING STARTED -->
 
@@ -157,59 +157,56 @@ To get a local copy of this project up and running, follow these steps.
   http://localhost:3000
   ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<div align="right"><hr width="250px"/><br /></div>
+<div align="right"><hr width="250px"/></div>
 
 ## 👥 Authors <a name="author"></a>
   👤 <b>Binyam Tegene</b>
   <ul>
     <li>
       <a href="https://github.com/Log-benjamin">
-      <img align="center" width="18px" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg" alt="github logo" />
+      <img width="16px" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg" alt="github logo" />
       <b>@binyam tegene</b>
       </a>
     </li>
     <li>
       <a href="https://twitter.com/@binyam_tegene">
-      <img align="center" width="18px" src="https://ik.imagekit.io/dqd3uh1at/x-new-logo.svg?updatedAt=1697475085598" alt="x logo" />
+      <img width="16px" src="https://ik.imagekit.io/dqd3uh1at/x-new-logo.svg?updatedAt=1697475085598" alt="x logo" />
       <b>@binyam tegene</b>
       </a>
     </li>
     <li>
       <a href="https://www.linkedin.com/in/binyam-tegene-4b77ab265">
-      <img align="center" width="18px" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="linkedin logo" />
+      <img width="16px" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="linkedin logo" />
       <b>@binyam tegene</b>
       </a>
     </li>
   </ul>
   <br />
-  
+
 👨‍💻 <b>Luis Zubia</b>
   <ul>
     <li>
       <a href="https://github.com/luigirazum">
-      <img align="center" width="18px" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg" alt="github logo" />
+      <img width="16px" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg" alt="github logo" />
       <b>@luigirazum</b>
       </a>
     </li>
     <li>
-    <!-- TODO: Change X-Logo source file -->
       <a href="https://twitter.com/LuigiRazum">
-      <img align="center" width="18px" src="https://ik.imagekit.io/dqd3uh1at/x-new-logo.svg?updatedAt=1697475085598" alt="x logo" />
+      <img width="16px" src="https://ik.imagekit.io/dqd3uh1at/x-new-logo.svg?updatedAt=1697475085598" alt="x logo" />
       <b>@LuigiRazum</b>
       </a>
     </li>
     <li>
       <a href="https://linkedin.com/in/luiszubia">
-      <img align="center" width="18px" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="linkedin logo" />
+      <img width="16px" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="linkedin logo" />
       <b>/luiszubia</b>
       </a>
     </li>
   </ul>
 
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<div align="right"><hr width="250px"/><br /></div>
+<div align="right"><hr width="250px"/></div>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
@@ -219,7 +216,7 @@ To get a local copy of this project up and running, follow these steps.
 - **Search** for recipes by *ingredient*, *cuisine*, or *occasion*.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<div align="right"><hr width="250px"/><br /></div>
+<div align="right"><hr width="250px"/></div>
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -228,14 +225,14 @@ Contributions, issues, typos, and feature requests are welcome!
 Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<div align="right"><hr width="250px"/><br /></div>
+<div align="right"><hr width="250px"/></div>
 
 ## ⭐️ Show your support <a name="support"></a>
 
 If you like this project, your support giving a ⭐ will be highly appreciated.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<div align="right"><hr width="250px"/><br /></div>
+<div align="right"><hr width="250px"/></div>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
@@ -244,7 +241,7 @@ If you like this project, your support giving a ⭐ will be highly appreciated.
 _**Wikipedia:** [Ruby on Rails - History](https://en.wikipedia.org/wiki/Ruby_on_Rails)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<div align="right"><hr width="250px"/><br /></div>
+<div align="right"><hr width="250px"/></div>
 
 <!-- FAQ (optional)
 
@@ -269,9 +266,4 @@ _**Wikipedia:** [Ruby on Rails - History](https://en.wikipedia.org/wiki/Ruby_on_
 This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<div align="right">
-
-<hr width="250px"/>
-
-<br /></div>
+<div align="right"><hr width="250px"/></div>
