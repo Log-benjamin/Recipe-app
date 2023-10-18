@@ -1,0 +1,10 @@
+<table>
+  <thead>
+    <% columns.each do |column_name| %>
+      <td><%= create_column_name(column_name) %></td>
+    <% end %>
+  </thead>
+  <tbody>
+    <%= yield %>
+  </tbody>
+</table>
