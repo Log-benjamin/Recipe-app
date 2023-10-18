@@ -1,1 +1,27 @@
-<h1>This is recipe index Page</h1>
+<h1>Welcome to The Recipe Page</h1>
+<div>
+    <%= link_to new_recipe_path do %>
+        Add
+    <% end %>
+</div>
+<div>
+    <% @recipes.each do |recipe| %>
+      <div>
+        <%= link_to recipe_path(recipe) do %>
+          <h2>
+            <%= recipe.name %>
+          </h2>
+          <p>Description:
+            <span>
+              <%= recipe.description %>
+            </span>
+          </p>
+        <% end %>
+        <% if can? :destroy, recipe %>
+            <%= form_with model: recipe, url: recipe_path(recipe), method: :delete do |form| %>
+              <%= form.submit "Remove" %>
+            <% end %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>

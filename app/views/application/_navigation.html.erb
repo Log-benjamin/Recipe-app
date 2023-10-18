@@ -1,0 +1,28 @@
+<nav>
+    <ul>
+        <% if user_signed_in? %>
+          <li><a href="<%= root_path %>" link-ref>Home</a></li>
+          <li><a href="<%= foods_path %>" link-ref>Food</a></li>
+          <li><a href="<%= recipes_path %>" link-ref>Recipes</a></li>
+          <li><a href="<%= public_recipes_path %>" link-ref>Public Recipes</a></li>
+          <li><a href="<%= users_sign_out_path %>" link-ref>Log out</a></li>
+        <% else %>
+          <li><a href="<%= new_user_session_path %>" link-ref>Log In</a></li>
+          <li><a href="<%= new_user_registration_path %>" link-ref>Join</a></li>
+        <% end %>
+    </ul>
+</nav>
+<script>
+  document.addEventListener("turbo:load", function () {
+    const currentPath = "<%= request.path %>";
+    const navLinks = document.querySelectorAll("[link-ref]");
+
+    navLinks.forEach((link) => {
+      link.classList.remove("active-link");
+
+      if (link.getAttribute("href") === currentPath) {
+        link.classList.add("active-link");
+      }
+    });
+  });
+</script>
