@@ -1,0 +1,26 @@
+<h2>Add New Food</h2>
+<%= form_with model: @food, url: foods_path do |form| %>
+  <div class="field">
+      <%= form.label :name %>
+      <%= form.text_field :name, class: 'input' %>
+  </div>
+
+  <div class="field">
+      <%= form.label :measurement_unit %>
+      <%= form.text_field :measurement_unit, class: 'input' %>
+  </div>
+
+  <div class="field">
+      <%= form.label :price %>
+      <%= form.number_field :price, class: 'input' %>
+  </div>
+
+  <div class="field">
+      <%= form.label :quantity %>
+      <%= form.number_field :quantity, class: 'input' %>
+  </div>
+
+  <div class="actions">
+      <%= form.submit "Add Food", class: 'btn' %>
+  </div>
+<% end %>
