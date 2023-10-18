@@ -20,6 +20,7 @@ class FoodsController < ApplicationController
     @food = current_user.foods.build(food_params)
 
     if @food.save
+      session.delete(:new_food) if session[:new_food]
       redirect_to foods_path, notice: "Food #{@food.name} was added succesfully!"
     else
       flash[:alert] = @food.errors.full_messages.first
@@ -44,13 +45,9 @@ class FoodsController < ApplicationController
   def session_params
     return false if session[:new_food].nil?
 
-    params = session[:new_food].filter do |key|
+    session[:new_food].filter do |key|
       %w[name measurement_unit price quantity].include? key
     end
-
-    session.delete(:new_food) if session[:new_food]
-
-    params
   end
 
   def food_exists?(id)
