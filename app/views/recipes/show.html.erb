@@ -1,1 +1,58 @@
-<h1>This is recipe show Page</h1>
+<% if can? :read, @recipe %>
+<div>
+      <h1>
+        <%= @recipe.name %>
+      </h1>
+      <p>
+        Preparation time: <%= @recipe.preparation_time %>
+      </p>
+      <div>
+        <% if user_signed_in? %>
+          <%= form_for @recipe, url: update_recipe_privacy_recipe_path(@recipe), method: :patch do |f| %>
+              <% if can? :update, @recipe %>
+              <div>
+                <div>Public</div>
+                <%= f.check_box :public, class: 'toggle-checkbox', onclick: 'this.form.submit();' %>
+              </div>
+            <% end %>
+            <div>
+              <%= f.submit "" %>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+      <p>
+        Cooking time: <%= @recipe.cooking_time %>
+      </p>
+      <p>
+        Description: <%= @recipe.description %>
+      </p>
+      <% if can? :update, @recipe %>
+        <div>
+          <button>Generate Shopping List</button>
+          <%= link_to new_recipe_food_path(recipe_id: @recipe.id) do %>
+          <button>Add Ingredient</button>
+          <% end %>
+        </div>
+        </div>
+      <% end %>
+    </div>
+    <div>
+  <div>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Food</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Value</th>
+          <% if can? :destroy, @recipe %>
+            <th scope="col">Actions</th>
+          <% end %>
+        </tr>
+      </thead>
+    </table>
+  </div>
+</div>
+<% else %>
+ <%= link_to 'See Public Recipe', public_recipes_path %>
+<% end %>
