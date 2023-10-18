@@ -1,1 +1,4 @@
-<h1>This is food index Page</h1>
+<h2>Food List for <span><%= current_user %></span></h2>
+
+<%= link_to 'Add Food', new_food_path %>
+<%= render partial: 'foods', layout: 'table_layout', locals: { foods: @foods, columns: %w[name measurement_unit unit_price actions] } %>
