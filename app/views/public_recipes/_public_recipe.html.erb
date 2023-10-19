@@ -1,0 +1,10 @@
+<article>
+  <div class="info">
+    <h3><%= public_recipe %></h3>
+    <p>by: <span><%= public_recipe.user %></span></p>
+  </div>
+  <div class="totals">
+    <p>Food items: <span><%= public_recipe.total_items %></span></p>
+    <p>Total price: <span><%= number_to_currency(public_recipe.total_price, precision: 2, format: '%u %n') %></span></p>
+  </div>
+</article>
