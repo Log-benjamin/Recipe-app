@@ -3,13 +3,6 @@ class FoodsController < ApplicationController
     @foods = Food.where(user: current_user)
   end
 
-  def show
-    redirect_to foods_path, alert: 'Not a valid Food' and return unless /\A\d+\z/.match? params[:id]
-    redirect_to foods_path, alert: 'Food was not found' and return unless food_exists? params[:id]
-
-    @food = Food.where(user: current_user).find(params[:id])
-  end
-
   def new
     params = session_params
     @food = params ? Food.new(params) : Food.new
@@ -48,9 +41,5 @@ class FoodsController < ApplicationController
     session[:new_food].filter do |key|
       %w[name measurement_unit price quantity].include? key
     end
-  end
-
-  def food_exists?(id)
-    Food.where(user: current_user).exists? id
   end
 end
