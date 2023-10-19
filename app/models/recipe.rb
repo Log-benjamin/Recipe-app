@@ -13,4 +13,19 @@ class Recipe < ApplicationRecord
   belongs_to :user
   has_many :recipe_foods, inverse_of: :recipe
   has_many :foods, through: :recipe_foods
+
+  scope :is_public, -> { where(public: true) }
+
+  def total_items
+    recipe_foods.count
+  end
+
+  def total_price
+    total = 0
+    recipe_foods.each do |rf|
+      total += rf.quantity * rf.food.price
+    end
+
+    total
+  end
 end
