@@ -9,13 +9,16 @@ Rails.application.routes.draw do
   devise_scope :user do
     get '/users/sign_out', to: 'devise/sessions#destroy'
   end
-
+  resources :shopping_lists, only: [:index] do
+    collection do
+      get 'generate'
+    end
+  end
   id_pattern = /\d+/
   # id must match a number for at least one digit
   constraints(id: id_pattern, user_id: id_pattern, recipe_id: id_pattern, food_id: id_pattern, recipe_food_id: id_pattern) do
     resources :public_recipes, only: %i[index]
     resources :recipe_foods, only: %i[new create edit update destroy]
-    get 'general_shopping_list', to: 'shopping_list#index'
 
     resources :users, only: %i[new create]
 
