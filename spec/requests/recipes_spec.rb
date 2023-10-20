@@ -74,5 +74,11 @@ RSpec.describe "'Recipes' - [Controller]", :requests, type: :request do
         expect(response).to render_template('recipes/show')
       end
     end
+
+    context "* 'displayed content'", :template do
+      it "- 'body' includes 'Recipe info'" do
+        expect(response.body).to match(user.recipes.last.name)
+      end
+    end
   end
 end
