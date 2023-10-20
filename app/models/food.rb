@@ -17,8 +17,4 @@ class Food < ApplicationRecord
   belongs_to :user
   has_many :recipe_foods, inverse_of: :food, dependent: :destroy
   has_many :recipes, through: :recipe_foods
-
-  def to_s
-    name
-  end
 end

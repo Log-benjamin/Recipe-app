@@ -11,8 +11,4 @@ class User < ApplicationRecord
 
   has_many :recipes, inverse_of: :user
   has_many :foods, inverse_of: :user
-
-  def to_s
-    name
-  end
 end

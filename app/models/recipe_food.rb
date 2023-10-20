@@ -5,4 +5,8 @@ class RecipeFood < ApplicationRecord
 
   belongs_to :recipe
   belongs_to :food
+
+  def to_s
+    "#{recipe.name}/#{food.name}"
+  end
 end
