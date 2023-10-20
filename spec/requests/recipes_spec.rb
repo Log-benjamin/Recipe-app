@@ -63,5 +63,16 @@ RSpec.describe "'Recipes' - [Controller]", :requests, type: :request do
         expect(response).to have_http_status(:ok)
       end
     end
+
+    context "* 'template'", :template do
+      it "- renders 'show' template" do
+        expect(response).to render_template(:show)
+        expect(response).to render_template('show')
+      end
+
+      it "- renders 'recipes/show' template" do
+        expect(response).to render_template('recipes/show')
+      end
+    end
   end
 end
