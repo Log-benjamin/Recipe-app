@@ -1,29 +1,39 @@
-<div>
-    <h1>Add New Recipe</h1>
+<div class="top-container">
+    <div class="inner-container">
+        <h1>Add New Recipe</h1>
 
-    <%= form_with model: @recipe, url: recipes_path do |form| %>
-        <div>
-            <%= form.label :name %>
-            <%= form.text_field :name %>
-        </div>
+        <%= form_with model: @recipe, url: recipes_path do |form| %>
+            <div>
+                <%= form.label :name, class: "label-name" %>
+            </div>
+            <div>
+                <%= form.text_field :name, class: "input-fiel" %>
+            </div>
 
-        <div>
-            <%= form.label :preparation_time %>
-            <%= form.number_field :preparation_time %>
-        </div>
+            <div>
+                <%= form.label :preparation_time, class: "label-name" %> (* Must be specified n hours)
+            </div>
+            <div>
+                <%= form.number_field :preparation_time,  step: '0.25', class: "input-fiel", placeholder: "0.25 = 15Min" %>
+            </div>
 
-        <div>
-            <%= form.label :cooking_time %>
-            <%= form.number_field :cooking_time %>
-        </div>
+            <div>
+                <%= form.label :cooking_time, class: "label-name" %> (* Must be specified in hours)
+            </div>
+            <div>
+                <%= form.number_field :cooking_time,  step: '0.25', class: "input-fiel", placeholder: "0.25 = 15 Min" %>
+            </div>
 
-        <div>
-            <%= form.label :description %>
-            <%= form.text_area :description %>
-        </div>
+            <div>
+                <%= form.label :description, class: "label-name" %>
+            </div>
+            <div>
+                <%= form.text_area :description, rows: 6, style: 'width:90%; margin: 0.5rem 0' %>
+            </div>
 
-        <div>
-            <%= form.submit "Add Recipe" %>
-        </div>
-    <% end %>
+            <div class="submt-btn-div">
+                <%= form.submit "Add Recipe", class: "submit-btn" %>
+            </div>
+        <% end %>
+    </div>
 </div>
