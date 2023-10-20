@@ -4,7 +4,7 @@ RSpec.describe "'Recipes' - [Controller]", :requests, type: :request do
   let!(:user) { User.create(name: 'test', email: 'test@me.com', password: 'test1234', confirmed_at: Time.now) }
 
   describe "'GET /recipes' => 'index' action at 'recipes' controller", :index do
-    describe "* 'status" do
+    describe "* 'status'" do
       context "- if no user is 'logged in'", :status do
         it '- returns http found' do
           get recipes_path
@@ -34,6 +34,17 @@ RSpec.describe "'Recipes' - [Controller]", :requests, type: :request do
 
       it "- renders recipes/index' template" do
         expect(response).to render_template('recipes/index')
+      end
+    end
+
+    describe "* 'displayed content'", :content do
+      before do
+        sign_in user
+        get recipes_path
+      end
+
+      it "- 'body' includes 'Recipe page'" do
+        expect(response.body).to match(/Recipe Page/)
       end
     end
   end
