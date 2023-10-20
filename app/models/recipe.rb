@@ -9,7 +9,7 @@ class Recipe < ApplicationRecord
   validates :cooking_time, numericality: { greater_than: 0, message: 'must be greater than zero' }
 
   belongs_to :user
-  has_many :recipe_foods, dependent: :destroy
+  has_many :recipe_foods, inverse_of: :recipe, dependent: :destroy
   has_many :foods, through: :recipe_foods
 
   scope :is_public, -> { where(public: true) }
