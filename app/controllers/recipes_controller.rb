@@ -20,6 +20,17 @@ class RecipesController < ApplicationController
     end
   end
 
+  def update
+    @recipe = Recipe.find(params[:id])
+    @recipe.toggle(:public)
+    if @recipe.save
+      flash[:notice] = update_recipe_notice
+      redirect_to recipe_path(@recipe)
+    else
+      redirect_to recipe_path(@recipe), alert: @recipe.errors.full_messages.first
+    end
+  end
+
   def show
     @recipe = Recipe.includes(recipe_foods: :food).find(params[:id])
   end
@@ -40,5 +51,9 @@ class RecipesController < ApplicationController
 
   def recipe_params
     params.require(:recipe).permit(:name, :description, :preparation_time, :cooking_time)
+  end
+
+  def update_recipe_notice
+    "Recipe was succesfully #{@recipe.public? ? 'added to' : 'removed from'} the 'Public Recipes List'"
   end
 end
