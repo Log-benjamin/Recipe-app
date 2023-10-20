@@ -20,5 +20,21 @@ RSpec.describe "'Recipes' - [Controller]", :requests, type: :request do
         end
       end
     end
+
+    describe "* 'template'", :template do
+      before do
+        sign_in user
+        get recipes_path
+      end
+
+      it "- renders 'index' template" do
+        expect(response).to render_template(:index)
+        expect(response).to render_template('index')
+      end
+
+      it "- renders recipes/index' template" do
+        expect(response).to render_template('recipes/index')
+      end
+    end
   end
 end
