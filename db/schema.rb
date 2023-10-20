@@ -37,8 +37,8 @@ ActiveRecord::Schema[7.1].define(version: 2023_10_17_122719) do
 
   create_table "recipes", force: :cascade do |t|
     t.string "name", limit: 150, null: false
-    t.time "preparation_time", default: "2000-01-01 00:00:00", null: false
-    t.time "cooking_time", default: "2000-01-01 00:00:00", null: false
+    t.decimal "preparation_time", null: false
+    t.decimal "cooking_time", null: false
     t.text "description", null: false
     t.boolean "public", default: false, null: false
     t.datetime "created_at", null: false
