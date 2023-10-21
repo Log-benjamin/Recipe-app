@@ -62,7 +62,6 @@ end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'selenium-webdriver'
-  gem 'rspec-github', require: false
 end
 
 gem 'devise', '~> 4.9'
