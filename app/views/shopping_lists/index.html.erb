@@ -1,27 +1,27 @@
-<h1>Shopping List</h1>
-<div>
-      <div>
-        <label>Amount of food items to buy: <%= @recipe_foods&.count || 0 %></label>
-        <label>Total value of food needed: <%= number_to_currency(@needed_money, precision: 2) %></label>
-      </div>
-      <div>
-        <table>
-          <thead>
-            <tr>
-              <th>Food</th>
-              <th>Quantity</th>
-              <th>Value</th>
-            </tr>
-          </thead>
-          <tbody>
-            <% @recipe_foods&.each do |recipe_food| %>
-              <tr>
-                <td><%= recipe_food.food.name %></td>
-                <td><%= recipe_food.quantity %></td>
-                <td><%= number_to_currency(recipe_food.food.price * recipe_food.quantity, unit: '') %></td>
-              </tr>
+<div class = "shopping-top-container">
+  <div class = "shopping-inner-container">
+    <h1>Shopping List</h1>
+    <div class = "item-value-label">
+      <h3>Amount of food items to buy: <%= @recipe_foods&.count || 0 %></h3>
+      <h3>Total value of food needed: <%= number_to_currency(@needed_money, precision: 2) %></h3>
+    </div>
+    <table class="customers">
+      <tr>
+        <th>Food</th>
+        <th>Quantity</th>
+        <th>Total Price $</th>
+      </tr>
+      <% @recipe_foods&.each do |recipe_food| %>
+        <tr>
+          <td><%= recipe_food.food.name %></td>
+          <% @foods.each do |food| %>
+            <% if recipe_food.food.name == food.name %>
+              <td> <%= recipe_food.quantity - recipe_food.food.quantity %> </td>
             <% end %>
-          </tbody>
-        </table>
-      </div>
+          <% end %>
+          <td><%= number_to_currency(recipe_food.food.price * (recipe_food.quantity - recipe_food.food.quantity), unit: '') %></td>
+        </tr>
+      <% end %>
+      </table>
+  </div>
 </div>

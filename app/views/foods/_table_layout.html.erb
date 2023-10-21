@@ -1,9 +1,9 @@
-<table>
-  <thead>
+<table class="foods-table customers">
+  <tr>
     <% columns.each do |column_name| %>
-      <td><%= create_column_name(column_name) %></td>
+      <th><%= create_column_name(column_name) %></th>
     <% end %>
-  </thead>
+  </tr>
   <tbody>
     <%= yield %>
   </tbody>
