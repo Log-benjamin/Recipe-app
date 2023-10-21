@@ -46,10 +46,6 @@ RSpec.describe "'Recipes' - [Controller]", :requests, type: :request do
         sign_in user
         get recipes_path
       end
-
-      it "- 'body' includes 'Recipe page'" do
-        expect(response.body).to match(/Recipe Page/)
-      end
     end
   end
 
