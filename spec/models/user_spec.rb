@@ -2,7 +2,9 @@ require 'rails_helper'
 
 # Start of the Specs for 'User' model
 RSpec.describe User, :models, type: :model do
-  let!(:user) { described_class.new(name: 'Test User', email: 'test@me.com', password: 'test1234', confirmed_at: Time.now) }
+  let!(:user) do
+    described_class.new(name: 'Test User', email: 'test@me.com', password: 'test1234', confirmed_at: Time.now)
+  end
 
   # 'attr_mod' will allow you to test 'obj' with
   # the 'mod' attribute passed.
@@ -36,8 +38,8 @@ RSpec.describe User, :models, type: :model do
       end
 
       it '- must contains only letters' do
-        expect(attr_mod({ name: '1asda'})).to_not be_valid
-        expect(attr_mod({ name: 'username'})).to be_valid
+        expect(attr_mod({ name: '1asda' })).to_not be_valid
+        expect(attr_mod({ name: 'username' })).to be_valid
       end
     end
   end

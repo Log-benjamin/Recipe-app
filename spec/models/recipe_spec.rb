@@ -4,11 +4,12 @@ require 'rails_helper'
 def generate_test_ingredients(user)
   foods = []
   %i[1 2 3 4 5 6].each do |food_number|
-    foods << Food.create(name: "Food #{food_number}", measurement_unit: "measure unit #{food_number}", quantity: rand(8))
+    foods << Food.create(name: "Food #{food_number}", measurement_unit: "measure unit #{food_number}",
+                         quantity: rand(8))
   end
 
   foods.each do |food|
-    RecipeFood.create(recipe: user.recipes.last, food: food)
+    RecipeFood.create(recipe: user.recipes.last, food:)
   end
 
   RecipeFood.where(recipe: user.recipes.last)
@@ -17,7 +18,10 @@ end
 # Start of the Specs for 'User' model
 RSpec.describe Recipe, :models, type: :model do
   let!(:user) { User.create(name: 'Test User', email: 'test@me.com', password: 'test1234', confirmed_at: Time.now) }
-  let!(:recipe) { described_class.new(name: 'Test Recipe', description: 'This is a recipe description', preparation_time: 0.5, cooking_time: 1.5, user:) }
+  let!(:recipe) do
+    described_class.new(name: 'Test Recipe', description: 'This is a recipe description', preparation_time: 0.5,
+                        cooking_time: 1.5, user:)
+  end
 
   # 'attr_mod' will allow you to test 'obj' with
   # the 'mod' attribute passed.
@@ -55,8 +59,8 @@ RSpec.describe Recipe, :models, type: :model do
       end
 
       it '- must contains only letters' do
-        expect(attr_mod({ name: '1asda'})).to_not be_valid
-        expect(attr_mod({ name: 'a new recipe'})).to be_valid
+        expect(attr_mod({ name: '1asda' })).to_not be_valid
+        expect(attr_mod({ name: 'a new recipe' })).to be_valid
       end
     end
 
