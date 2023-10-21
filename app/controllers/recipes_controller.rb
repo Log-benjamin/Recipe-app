@@ -25,9 +25,9 @@ class RecipesController < ApplicationController
     @recipe.toggle(:public)
     if @recipe.save
       flash[:notice] = update_recipe_notice
-      redirect_to recipe_path(@recipe)
+      redirect_to recipe_path(@recipe), status: :see_other
     else
-      redirect_to recipe_path(@recipe), alert: @recipe.errors.full_messages.first
+      redirect_to recipe_path(@recipe), status: 304, alert: @recipe.errors.full_messages.first
     end
   end
 
