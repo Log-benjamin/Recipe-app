@@ -82,6 +82,37 @@ RSpec.describe "'Recipes' - [Controller]", :requests, type: :request do
     end
   end
 
+  describe "'GET /new' => 'new' action at 'recipes' controller", :new do
+    before do
+      sign_in user
+      get new_recipe_path
+    end
+
+    context "* 'status'", :status do
+      it '- returns http success/ok' do
+        expect(response).to have_http_status(:success)
+        expect(response).to have_http_status(:ok)
+      end
+    end
+
+    context "* 'template'", :template do
+      it "- renders 'new' template" do
+        expect(response).to render_template(:new)
+        expect(response).to render_template('new')
+      end
+
+      it "- renders 'recipes/new' template" do
+        expect(response).to render_template('recipes/new')
+      end
+    end
+
+    context "* 'displayed content'", :template do
+      it "- 'body' includes 'Add New Recipe'" do
+        expect(response.body).to match(/Add New Recipe/)
+      end
+    end
+  end
+
   describe "'GET /update' => 'update' action at 'recipes' controller", :show do
     before do
       sign_in user
