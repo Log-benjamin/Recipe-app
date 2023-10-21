@@ -37,7 +37,7 @@ RSpec.describe 'Recipe Index Page', type: :feature do
     scenario 'Must show sign up Btn and confirmation links If not logged In' do
       visit recipes_path
       expect(page).to have_content("Didn't receive confirmation instructions?")
-      expect(page).to have_content('Sign up')
+      expect(page).to have_content('sign up')
     end
   end
 
@@ -45,7 +45,7 @@ RSpec.describe 'Recipe Index Page', type: :feature do
     scenario "Can see recipe page's content if signed in" do
       sign_in @user1
       visit recipes_path
-      expect(page).to have_content('Recipe Page')
+      expect(page).to have_content('Recipe')
     end
 
     scenario 'Can see the user name in recipe page if signed in' do

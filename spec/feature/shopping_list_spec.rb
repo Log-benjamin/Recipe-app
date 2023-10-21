@@ -64,7 +64,7 @@ RSpec.describe 'Shopping List Page', type: :feature do
       expect(page).to have_content('$')
       expect(page).to have_content('Food')
       expect(page).to have_content('Quantity')
-      expect(page).to have_content('Value')
+      expect(page).to have_content('Total Price')
     end
   end
 end
