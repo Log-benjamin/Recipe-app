@@ -81,4 +81,30 @@ RSpec.describe "'Recipes' - [Controller]", :requests, type: :request do
       end
     end
   end
+
+  describe "'GET /update' => 'update' action at 'recipes' controller", :show do
+    before do
+      sign_in user
+      user.recipes.create(name: 'Test recipe', description: 'Test description recipe', preparation_time: 1, cooking_time: 1.5)
+      patch update_recipe_path(user.recipes.last)
+    end
+
+    context "* 'status'", :status do
+      it '- returns http see_other' do
+        expect(response).to have_http_status(:see_other)
+      end
+    end
+
+    context "* 'redirects to'", :status do
+      it "- 'GET /show'" do
+        expect(response).to redirect_to(recipe_path(user.recipes.last))
+      end
+    end
+
+    context "* 'displayed content'", :template do
+      it "- the 'Recipe info' is showed" do
+        expect(response.location).to match(recipe_path(user.recipes.last))
+      end
+    end
+  end
 end
