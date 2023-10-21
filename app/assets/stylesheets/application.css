@@ -1,15 +1,163 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #dfded4;
+}
+
+h1 {
+  text-align: center;
+  color: #0096ff;
+}
+
+p {
+  margin-top: 1rem;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logged-in-user {
+  color: white;
+  margin-right: 15%;
+  font-size: 1rem;
+}
+
+.logged-in-user h3 {
+  padding: 0;
+  margin: 0;
+}
+
+/* Styling for Navbar section */
+nav {
+  background-color: #333;
+  padding: 1% 1% 1% 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin-right: 5%;
+}
+
+li a {
+  padding: 0.7rem;
+  color: #f2f2f2;
+  font-size: 1.1rem;
+}
+
+li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active-link {
+  background-color: #04aa6d;
+}
+
+/* Styling for Navbar section */
+
+/* Stylilng for Tables */
+.customers {
+  margin-left: 5%;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+.customers td,
+.customers th {
+  border: 1px solid #bbb;
+  padding: 8px;
+  text-align: center;
+}
+
+.customers tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+.customers tr:hover {
+  background-color: #c0c0c0;
+}
+
+.customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #04aa6d;
+  color: white;
+}
+
+.table-td-div {
+  display: flex;
+  margin-left: 35%;
+}
+
+/* Stylilng for Tables */
+
+/* styling for public toggle slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 26px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider::before {
+  position: absolute;
+  content: '';
+  height: 18px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.public_check:checked + .slider {
+  background-color: #2196f3;
+}
+
+.public_check:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+.public_check:checked + .slider::before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round::before {
+  border-radius: 50%;
+}
+
+.public {
+  margin-top: 18px;
+}
+
+/* styling for public toggle slider */
