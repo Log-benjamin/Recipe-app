@@ -113,6 +113,31 @@ RSpec.describe "'Recipes' - [Controller]", :requests, type: :request do
     end
   end
 
+  describe "'PUT /create' => 'create' action at 'recipes' controller", :create do
+    before do
+      sign_in user
+      post recipes_path(params: { recipe: { name: 'New Recipe', description: 'New Recipe Description', preparation_time: 0.5, cooking_time: 1, user: } })
+    end
+
+    context "* 'status'", :status do
+      it '- returns http found' do
+        expect(response).to have_http_status(:found)
+      end
+    end
+
+    context "* 'redirects to'", :redirects do
+      it "- 'GET /index'" do
+        expect(response).to redirect_to(recipes_path)
+      end
+    end
+
+    context "* 'displayed content'", :template do
+      it "- the 'Recipes Page' is showed" do
+        expect(response.location).to match(recipes_path)
+      end
+    end
+  end
+
   describe "'GET /update' => 'update' action at 'recipes' controller", :show do
     before do
       sign_in user
