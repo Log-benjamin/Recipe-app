@@ -25,7 +25,7 @@ Rails.application.routes.draw do
     resources :foods, only: %i[index new create destroy]
     resources :recipes, only: %i[index show new create destroy] do
       member do
-        patch 'update_privacy', to: 'recipes#updatePrivacy', as: 'update_recipe_privacy'
+        patch 'update', to: 'recipes#update', as: 'update'
       end
     end
   end
