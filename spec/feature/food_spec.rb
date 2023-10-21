@@ -24,7 +24,7 @@ RSpec.describe 'Foods Page', type: :feature do
     scenario 'Must show sign up Btn and confirmation links If not logged In' do
       visit foods_path
       expect(page).to have_content("Didn't receive confirmation instructions?")
-      expect(page).to have_content('Sign up')
+      expect(page).to have_content('sign up')
     end
   end
 

@@ -1,5 +1,5 @@
-<div class="top-container">
-    <div class="inner-container">
+<div class="recipe-food-top-container">
+    <div class="recipe-food-inner-container">
         <h1>Create Recipe Food</h1>
         <%= form_with model: [@recipe, @recipe_food], url: recipe_foods_path(@recipe), method: :post, class: "text-gray-800" do |form| %>
             <%= hidden_field_tag :recipe_id, @recipe.id %>

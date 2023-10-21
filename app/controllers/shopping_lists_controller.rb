@@ -10,7 +10,9 @@ class ShoppingListsController < ApplicationController
     # Fetch User Foods
     @foods = current_user.foods
     @recipe_foods = @recipe.recipe_foods.includes(:food)
-    @needed_money = @recipe_foods.sum { |recipe_food| recipe_food.food.price * recipe_food.quantity }
+    @needed_money = @recipe_foods.sum do |recipe_food|
+      recipe_food.food.price * (recipe_food.quantity - recipe_food.food.quantity)
+    end
   end
 
   def generate

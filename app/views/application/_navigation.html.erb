@@ -1,13 +1,14 @@
 <nav>
+    
     <ul>
         <% if user_signed_in? %>
-          <li>Hey, <%= current_user %> </li>
-          <li><a href="<%= shopping_lists_path %>" link-ref>Shopping</a></li>
+          <span class="logged-in-user"><h3>Hi, <%= current_user %></h3></span>
           <li><a href="<%= foods_path %>" link-ref>Food</a></li>
           <li><a href="<%= recipes_path %>" link-ref>Recipes</a></li>
           <li><a href="<%= public_recipes_path %>" link-ref>Public Recipes</a></li>
           <li><a href="<%= users_sign_out_path %>" link-ref>Log out</a></li>
         <% else %>
+          <li><a href="<%= public_recipes_path %>" link-ref>Public Recipes</a></li>
           <li><a href="<%= new_user_session_path %>" link-ref>Log In</a></li>
           <li><a href="<%= new_user_registration_path %>" link-ref>Join</a></li>
         <% end %>

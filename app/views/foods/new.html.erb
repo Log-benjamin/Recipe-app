@@ -1,26 +1,39 @@
-<h2>Add New Food</h2>
-<%= form_with model: @food, url: foods_path do |form| %>
-  <div class="field">
-      <%= form.label :name %>
-      <%= form.text_field :name, autofocues: true, class: 'input' %>
-  </div>
+<div class="top-container">
+    <div class="inner-container food-form-inner-cont">
+        <h1>Add New Food</h1>
+        <%= form_with model: @food, url: foods_path do |form| %>
+        <div class="field">
+            <%= form.label :name, class: ".label-name" %>
+        </div>
 
-  <div class="field">
-      <%= form.label :measurement_unit %>
-      <%= form.text_field :measurement_unit, class: 'input' %>
-  </div>
+        <div class="field">
+            <%= form.text_field :name, autofocues: true, class: 'input-fiel' %>
+        </div>
 
-  <div class="field">
-      <%= form.label :price %>
-      <%= form.number_field :price, step: 0.1, class: 'input' %>
-  </div>
+        <div class="field">
+            <%= form.label :measurement_unit, class: ".label-name" %>
+        </div>
+        <div class="field">
+            <%= form.text_field :measurement_unit, class: 'input-fiel' %>
+        </div>
 
-  <div class="field">
-      <%= form.label :quantity %>
-      <%= form.number_field :quantity, step: 0.1, class: 'input' %>
-  </div>
+        <div class="field">
+            <%= form.label :price, class: ".label-name" %>
+        </div>
+        <div class="field">
+            <%= form.number_field :price, step: 0.1, class: 'input-fiel' %>
+        </div>
 
-  <div class="actions">
-      <%= form.submit "Add Food", class: 'btn' %>
-  </div>
-<% end %>
+        <div class="field">
+            <%= form.label :quantity, class: ".label-name" %>
+        </div>
+        <div class="field">
+            <%= form.number_field :quantity, step: 1, class: 'input-fiel' %>
+        </div>
+
+        <div class="actions">
+            <%= form.submit "Add Food", class: "submit-btn" %>
+        </div>
+        <% end %>
+    </div>
+</div>

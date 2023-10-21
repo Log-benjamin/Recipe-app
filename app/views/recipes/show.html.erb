@@ -1,71 +1,15 @@
-<style>
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 26px;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: '';
-  height: 18px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.public_check:checked + .slider {
-  background-color: #2196F3;
-}
-
-.public_check:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-.public_check:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-.slider.round {
-  border-radius: 34px;
-}
-.slider.round:before {
-  border-radius: 50%
-}
-.public {
-  margin-top: 18px;
-}
-</style>
-
 <% if can? :read, @recipe %>
-<div class = "top-container">
-  <div class = "inner-container">
+<div class = "recipe-show-top-container">
+  <div class = "recipe-show-inner-container">
     <h1>
       <%= @recipe.name %>
     </h1>
     <div class = "prep-time-public">
-      <p>
-        <strong>Preparation time</strong>: <%= @recipe.preparation_time %> hour
-      </p>
-      <% if user_signed_in? and can? :update, @recipe %>
+        <p>
+          <strong>Preparation time</strong>: <%= @recipe.preparation_time %> hour
+        </p>
+        <div class = "publi">
+        <% if user_signed_in? and can? :update, @recipe %>
         <div class = "public">
           <%= label_tag do %>
             <strong>Public</strong>
@@ -77,20 +21,21 @@
             <% end %>
           <% end %>
         </div>
-      <% end %>
+      <% end %>	
+        </div>
     </div>
     <p>
       <strong>Cooking time</strong>: <%= @recipe.cooking_time %> hour
     </p>
     <p class="descr-top">
-      <strong>Steps to Cook</strong>:
+      <strong>Steps to Cook</strong>: 
       <p class="descr">
         <%= @recipe.description %>
       </p>
     </p>
     <% if can? :update, @recipe %>
       <div class="shop-ingrid-container">
-        <%= link_to generate_shopping_lists_path(recipe_id: @recipe.id) do %>
+        <%= link_to generate_shopping_lists_path(recipe_id: @recipe.id) do %>     
           <button>Generate Shopping List</button>
         <% end %>
         <%= link_to new_recipe_food_path(recipe_id: @recipe.id) do %>
@@ -104,7 +49,7 @@
         <tr>
           <th>Food</th>
           <th>Quantity</th>
-          <th>Quantity</th>
+          <th>Value</th>
           <% if can? :destroy, @recipe %>
             <th>Actions</th>
           <% end %>
@@ -118,7 +63,7 @@
               <div class="table-td-div">
                 <% if can? :destroy, @recipe %>
                   <%= form_with model: food, url: recipe_food_path(food), method: :delete do |form| %>
-                    <%= form.submit "Remove", class: "remove-btn" %>
+                    <%= form.submit "Remove", class: "recipe-show-remove-btn" %>
                   <% end %>
                 <% end %>
               </div>
@@ -129,5 +74,5 @@
   </div>
 </div>
 <% else %>
-  <%= link_to 'See Public Recipe', public_recipes_path %>
+ <%= link_to 'See Public Recipe', public_recipes_path %>
 <% end %>
