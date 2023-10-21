@@ -2,7 +2,10 @@ require 'rails_helper'
 
 RSpec.describe "'Recipes' - [Controller]", :requests, type: :request do
   let!(:user) { User.create(name: 'test', email: 'test@me.com', password: 'test1234', confirmed_at: Time.now) }
-  let!(:recipe) { Recipe.create(user:, name: 'Test recipe', description: 'Test description recipe', preparation_time: 1, cooking_time: 1.5) }
+  let!(:recipe) do
+    Recipe.create(user:, name: 'Test recipe', description: 'Test description recipe', preparation_time: 1,
+                  cooking_time: 1.5)
+  end
 
   describe "'GET /recipes' => 'index' action at 'recipes' controller", :index do
     describe "* 'status'" do
@@ -53,7 +56,8 @@ RSpec.describe "'Recipes' - [Controller]", :requests, type: :request do
   describe "'GET /show' => 'show' action at 'recipes' controller", :show do
     before do
       sign_in user
-      user.recipes.create(name: 'Test recipe', description: 'Test description recipe', preparation_time: 1, cooking_time: 1.5)
+      user.recipes.create(name: 'Test recipe', description: 'Test description recipe', preparation_time: 1,
+                          cooking_time: 1.5)
       get recipe_path(user.recipes.last)
     end
 
@@ -116,7 +120,8 @@ RSpec.describe "'Recipes' - [Controller]", :requests, type: :request do
   describe "'PUT /create' => 'create' action at 'recipes' controller", :create do
     before do
       sign_in user
-      post recipes_path(params: { recipe: { name: 'New Recipe', description: 'New Recipe Description', preparation_time: 0.5, cooking_time: 1, user: } })
+      post recipes_path(params: { recipe: { name: 'New Recipe', description: 'New Recipe Description',
+                                            preparation_time: 0.5, cooking_time: 1, user: } })
     end
 
     context "* 'status'", :status do
@@ -141,7 +146,8 @@ RSpec.describe "'Recipes' - [Controller]", :requests, type: :request do
   describe "'GET /update' => 'update' action at 'recipes' controller", :show do
     before do
       sign_in user
-      user.recipes.create(name: 'Test recipe', description: 'Test description recipe', preparation_time: 1, cooking_time: 1.5)
+      user.recipes.create(name: 'Test recipe', description: 'Test description recipe', preparation_time: 1,
+                          cooking_time: 1.5)
       patch update_recipe_path(user.recipes.last)
     end
 
