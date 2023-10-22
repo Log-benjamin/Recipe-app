@@ -1,0 +1,91 @@
+.food-delete-btn {
+  padding: 0.3rem 0.5rem;
+  color: white;
+  border: none;
+  text-align: center;
+  margin-left: 25%;
+  font-size: 0.75rem;
+  text-decoration: none;
+  border-radius: 3px;
+  background-color: #f44336;
+}
+
+.food-delete-btn:hover {
+  color: black;
+}
+
+.top-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.inner-container {
+  padding: 0 2% 2% 4%;
+  width: 65%;
+  border-radius: 5px;
+}
+
+.add-food-link-cont {
+  display: flex;
+  justify-content: right;
+  margin-right: 5%;
+  margin-bottom: 1rem;
+}
+
+.add-food-link {
+  background-color: #00a300;
+  padding: 0.5rem 1rem 0.5rem 1.3rem;
+  border-radius: 10px;
+}
+
+.add-food-link a {
+  text-decoration: none;
+  color: white;
+}
+
+.add-food-link:hover {
+  background-color: #3ee39b;
+}
+
+.add-food-link a:hover {
+  color: black;
+}
+
+.food-form-inner-cont {
+  background-color: #f2f2f2;
+  width: 35%;
+}
+
+.food-form-inner-cont .label-name {
+  margin-bottom: 4rem;
+}
+
+.food-form-inner-cont .input-fiel {
+  margin: 0.5rem 0;
+  width: 90%;
+  height: 1.5rem;
+  border-radius: 5px;
+  border: 0.5px solid black;
+}
+
+.food-form-inner-cont .actions {
+  display: flex;
+  justify-content: right;
+  margin-right: 9%;
+  margin-top: 1rem;
+}
+
+.food-form-inner-cont .actions .submit-btn {
+  padding: 0.5rem;
+  color: white;
+  background-color: #00a300;
+  border: none;
+  border-radius: 7px;
+}
+
+.food-form-inner-cont .submit-btn:hover {
+  background-color: #3ee39b;
+  color: black;
+}

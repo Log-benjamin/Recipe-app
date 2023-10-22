@@ -1,0 +1,11 @@
+<div class = "top-container">
+  <div class = "inner-container">
+    <h1> Food List </h1>
+    <div class="add-food-link-cont">
+      <div class = "add-food-link">
+        <%= link_to 'Add Food', new_food_path %>
+      </div>
+    </div>
+    <%= render partial: 'foods', layout: 'table_layout', locals: { foods: @foods, columns: %w[name measurement_unit unit_price Total_Quantity actions] } %>
+  </div>
+</div>

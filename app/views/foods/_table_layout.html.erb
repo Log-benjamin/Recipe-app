@@ -1,0 +1,10 @@
+<table class="foods-table customers">
+  <tr>
+    <% columns.each do |column_name| %>
+      <th><%= create_column_name(column_name) %></th>
+    <% end %>
+  </tr>
+  <tbody>
+    <%= yield %>
+  </tbody>
+</table>

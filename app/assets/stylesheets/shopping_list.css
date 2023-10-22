@@ -1,0 +1,19 @@
+
+.shopping-top-container {
+  margin: 0 20% 1rem 15%;
+  width: 65%;
+}
+
+.shopping-inner-container {
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.shopping-inner-container .item-value-label {
+  display: flex;
+  justify-content: space-between;
+  background-color: #dcdcdc;
+  padding: 0.3rem 3rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}

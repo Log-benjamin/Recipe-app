@@ -1,0 +1,36 @@
+<h1> Recipe List </h1>
+<div class="recipe-pages-list-recip-cont">
+  <div class="recipe-pages-inner-list-recip-cont">
+    <%= link_to new_recipe_path do %>
+       Add a Recipe
+    <% end %>
+  </div>
+</div>
+    <div class="recipe-page-card-container">
+        <% @recipes.each do |recipe| %>
+          <div class = "recipe-card">
+            <%= link_to recipe_path(recipe) do %>
+              <div class = "inner-recipe-card">
+                <div class= "name-and-rmvbtn">
+                  <h2>
+                    <%= recipe.name %>
+                  </h2>
+
+                </div>
+                <div>
+                  <p>Description:
+                    <span>
+                      <%= recipe.description %>
+                    </span>
+                  </p>
+                </div>
+              </div>
+            <% end %> 
+            <% if can? :destroy, recipe %>
+            <%= form_with model: recipe, url: recipe_path(recipe), method: :delete do |form| %>
+              <%= form.submit "Remove", class: "rmv-btn" %>
+            <% end %>
+            <% end %>
+          </div>
+        <% end %>
+      </div>

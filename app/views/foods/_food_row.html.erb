@@ -1,0 +1,17 @@
+<tr>
+  <td>
+    <%= food_row.name %>
+  </td>
+  <td>
+    <%= food_row.measurement_unit %>
+  </td>
+  <td>
+    <%= number_to_currency(food_row.price, precision: 2, format: '%u %n') %>
+  </td>
+  <td>
+    <%= food_row.quantity %>
+  </td>
+  <td>
+    <%= link_to 'Delete', food_path(food_row), data: { turbo_method: :delete, turbo_confirm: "Delete Food: #{food_row.name} ?" }, class: "food-delete-btn" %>
+  </td>
+</tr>

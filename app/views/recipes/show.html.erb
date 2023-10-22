@@ -1,0 +1,78 @@
+<% if can? :read, @recipe %>
+<div class = "recipe-show-top-container">
+  <div class = "recipe-show-inner-container">
+    <h1>
+      <%= @recipe.name %>
+    </h1>
+    <div class = "prep-time-public">
+        <p>
+          <strong>Preparation time</strong>: <%= @recipe.preparation_time %> hour
+        </p>
+        <div class = "publi">
+        <% if user_signed_in? and can? :update, @recipe %>
+        <div class = "public">
+          <%= label_tag do %>
+            <strong>Public</strong>
+          <% end %>
+          <%= label_tag '', class: 'switch' do %>
+            <%= link_to [:update, @recipe], data: { turbo_method: :patch, turbo_confirm: confirm_toggle_public } do %>
+              <%= check_box('recipe', :public, { class: 'public_check' }, true, false) %>
+              <span class="slider round"></span>
+            <% end %>
+          <% end %>
+        </div>
+      <% end %>	
+        </div>
+    </div>
+    <p>
+      <strong>Cooking time</strong>: <%= @recipe.cooking_time %> hour
+    </p>
+    <p class="descr-top">
+      <strong>Steps to Cook</strong>: 
+      <p class="descr">
+        <%= @recipe.description %>
+      </p>
+    </p>
+    <% if can? :update, @recipe %>
+      <div class="shop-ingrid-container">
+        <%= link_to generate_shopping_lists_path(recipe_id: @recipe.id) do %>     
+          <button>Generate Shopping List</button>
+        <% end %>
+        <%= link_to new_recipe_food_path(recipe_id: @recipe.id) do %>
+          <button>Add Ingredient</button>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+  <div>
+      <table class="customers">
+        <tr>
+          <th>Food</th>
+          <th>Quantity</th>
+          <th>Value</th>
+          <% if can? :destroy, @recipe %>
+            <th>Actions</th>
+          <% end %>
+        </tr>
+        <% @recipe.recipe_foods.each do |food| %>
+          <tr>
+            <td><%= food.food.name %></td>
+            <td><%= "#{food.quantity} #{food.food.measurement_unit}" %></td>
+            <td>$<%= food.food.price * food.quantity %></td>
+            <td>
+              <div class="table-td-div">
+                <% if can? :destroy, @recipe %>
+                  <%= form_with model: food, url: recipe_food_path(food), method: :delete do |form| %>
+                    <%= form.submit "Remove", class: "recipe-show-remove-btn" %>
+                  <% end %>
+                <% end %>
+              </div>
+            </td>
+          </tr>
+        <% end %>
+      </table>
+  </div>
+</div>
+<% else %>
+ <%= link_to 'See Public Recipe', public_recipes_path %>
+<% end %>
